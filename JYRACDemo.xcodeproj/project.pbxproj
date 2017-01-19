@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A01629481E0BB8F000CA9BED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01629471E0BB8F000CA9BED /* main.m */; };
+		A016294B1E0BB8F000CA9BED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A016294A1E0BB8F000CA9BED /* AppDelegate.m */; };
+		A01629511E0BB8F000CA9BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A016294F1E0BB8F000CA9BED /* Main.storyboard */; };
+		A01629531E0BB8F000CA9BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01629521E0BB8F000CA9BED /* Assets.xcassets */; };
+		A01629561E0BB8F000CA9BED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01629541E0BB8F000CA9BED /* LaunchScreen.storyboard */; };
+		A0162C671E0BBF4000CA9BED /* ViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = A016294C1E0BB8F000CA9BED /* ViewController.h */; };
+		A0162C681E0BBF4000CA9BED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A016294D1E0BB8F000CA9BED /* ViewController.m */; };
+		CA9EBBC0F639DD66FF74C79D /* libPods-JYRACDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5CF01C9F6015B220BDAA22 /* libPods-JYRACDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A016295D1E0BB8F000CA9BED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A016293B1E0BB8EF00CA9BED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A01629421E0BB8EF00CA9BED;
+			remoteInfo = JYHotAndColdSignal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E5CF01C9F6015B220BDAA22 /* libPods-JYRACDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JYRACDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78731080E77D364685FB89A0 /* Pods-JYRACDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYRACDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYRACDemo/Pods-JYRACDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A01629431E0BB8EF00CA9BED /* JYRACDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYRACDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01629471E0BB8F000CA9BED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A01629491E0BB8F000CA9BED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A016294A1E0BB8F000CA9BED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A016294C1E0BB8F000CA9BED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A016294D1E0BB8F000CA9BED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A01629501E0BB8F000CA9BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A01629521E0BB8F000CA9BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A01629551E0BB8F000CA9BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A01629571E0BB8F000CA9BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A016295C1E0BB8F000CA9BED /* JYRACDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JYRACDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD53F9F583DBDD034A06004 /* Pods-JYRACDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYRACDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYRACDemo/Pods-JYRACDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A01629401E0BB8EF00CA9BED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9EBBC0F639DD66FF74C79D /* libPods-JYRACDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A01629591E0BB8F000CA9BED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FA0CE12B548FE54C191CFE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E5CF01C9F6015B220BDAA22 /* libPods-JYRACDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		556E238961BC270C6E768B89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFD53F9F583DBDD034A06004 /* Pods-JYRACDemo.debug.xcconfig */,
+				78731080E77D364685FB89A0 /* Pods-JYRACDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A016293A1E0BB8EF00CA9BED = {
+			isa = PBXGroup;
+			children = (
+				A01629451E0BB8EF00CA9BED /* JYRACDemo */,
+				A01629441E0BB8EF00CA9BED /* Products */,
+				556E238961BC270C6E768B89 /* Pods */,
+				0FA0CE12B548FE54C191CFE4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A01629441E0BB8EF00CA9BED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A01629431E0BB8EF00CA9BED /* JYRACDemo.app */,
+				A016295C1E0BB8F000CA9BED /* JYRACDemo.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A01629451E0BB8EF00CA9BED /* JYRACDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A016296B1E0BB93900CA9BED /* Lib */,
+				A01629491E0BB8F000CA9BED /* AppDelegate.h */,
+				A016294A1E0BB8F000CA9BED /* AppDelegate.m */,
+				A016294C1E0BB8F000CA9BED /* ViewController.h */,
+				A016294D1E0BB8F000CA9BED /* ViewController.m */,
+				A016294F1E0BB8F000CA9BED /* Main.storyboard */,
+				A01629521E0BB8F000CA9BED /* Assets.xcassets */,
+				A01629541E0BB8F000CA9BED /* LaunchScreen.storyboard */,
+				A01629571E0BB8F000CA9BED /* Info.plist */,
+				A01629461E0BB8F000CA9BED /* Supporting Files */,
+			);
+			path = JYRACDemo;
+			sourceTree = "<group>";
+		};
+		A01629461E0BB8F000CA9BED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A01629471E0BB8F000CA9BED /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A016296B1E0BB93900CA9BED /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A01629421E0BB8EF00CA9BED /* JYRACDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A01629651E0BB8F000CA9BED /* Build configuration list for PBXNativeTarget "JYRACDemo" */;
+			buildPhases = (
+				7F048148E33CDECA4D428FAB /* [CP] Check Pods Manifest.lock */,
+				A016293F1E0BB8EF00CA9BED /* Sources */,
+				A01629401E0BB8EF00CA9BED /* Frameworks */,
+				A01629411E0BB8EF00CA9BED /* Resources */,
+				13B57E906379C2910C519D34 /* [CP] Embed Pods Frameworks */,
+				E205ED19FA8F7FDE04CCE669 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JYRACDemo;
+			productName = JYHotAndColdSignal;
+			productReference = A01629431E0BB8EF00CA9BED /* JYRACDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A016295B1E0BB8F000CA9BED /* JYRACDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A01629681E0BB8F000CA9BED /* Build configuration list for PBXNativeTarget "JYRACDemoTests" */;
+			buildPhases = (
+				A01629581E0BB8F000CA9BED /* Sources */,
+				A01629591E0BB8F000CA9BED /* Frameworks */,
+				A016295A1E0BB8F000CA9BED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A016295E1E0BB8F000CA9BED /* PBXTargetDependency */,
+			);
+			name = JYRACDemoTests;
+			productName = JYHotAndColdSignalTests;
+			productReference = A016295C1E0BB8F000CA9BED /* JYRACDemo.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A016293B1E0BB8EF00CA9BED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "China Industrial Bank";
+				TargetAttributes = {
+					A01629421E0BB8EF00CA9BED = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A016295B1E0BB8F000CA9BED = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A01629421E0BB8EF00CA9BED;
+					};
+				};
+			};
+			buildConfigurationList = A016293E1E0BB8EF00CA9BED /* Build configuration list for PBXProject "JYRACDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A016293A1E0BB8EF00CA9BED;
+			productRefGroup = A01629441E0BB8EF00CA9BED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A01629421E0BB8EF00CA9BED /* JYRACDemo */,
+				A016295B1E0BB8F000CA9BED /* JYRACDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A01629411E0BB8EF00CA9BED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01629561E0BB8F000CA9BED /* LaunchScreen.storyboard in Resources */,
+				A01629531E0BB8F000CA9BED /* Assets.xcassets in Resources */,
+				A01629511E0BB8F000CA9BED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A016295A1E0BB8F000CA9BED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13B57E906379C2910C519D34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYRACDemo/Pods-JYRACDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F048148E33CDECA4D428FAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E205ED19FA8F7FDE04CCE669 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYRACDemo/Pods-JYRACDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A016293F1E0BB8EF00CA9BED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0162C671E0BBF4000CA9BED /* ViewController.h in Sources */,
+				A0162C681E0BBF4000CA9BED /* ViewController.m in Sources */,
+				A016294B1E0BB8F000CA9BED /* AppDelegate.m in Sources */,
+				A01629481E0BB8F000CA9BED /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A01629581E0BB8F000CA9BED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A016295E1E0BB8F000CA9BED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A01629421E0BB8EF00CA9BED /* JYRACDemo */;
+			targetProxy = A016295D1E0BB8F000CA9BED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A016294F1E0BB8F000CA9BED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A01629501E0BB8F000CA9BED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A01629541E0BB8F000CA9BED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A01629551E0BB8F000CA9BED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A01629631E0BB8F000CA9BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A01629641E0BB8F000CA9BED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A01629661E0BB8F000CA9BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD53F9F583DBDD034A06004 /* Pods-JYRACDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JYRACDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JYHotAndColdSignal/Lib/ReactiveObjC/ReactiveObjC",
+					"$(PROJECT_DIR)/JYHotAndColdSignal/Lib/ReactiveObjC/ReactiveObjC/Support",
+					Files,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cib.JYHotAndColdSignal;
+				PRODUCT_NAME = JYRACDemo;
+			};
+			name = Debug;
+		};
+		A01629671E0BB8F000CA9BED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78731080E77D364685FB89A0 /* Pods-JYRACDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JYRACDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JYHotAndColdSignal/Lib/ReactiveObjC/ReactiveObjC",
+					"$(PROJECT_DIR)/JYHotAndColdSignal/Lib/ReactiveObjC/ReactiveObjC/Support",
+					Files,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cib.JYHotAndColdSignal;
+				PRODUCT_NAME = JYRACDemo;
+			};
+			name = Release;
+		};
+		A01629691E0BB8F000CA9BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JYHotAndColdSignalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cib.JYHotAndColdSignalTests;
+				PRODUCT_NAME = JYRACDemo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JYRACDemo.app/JYRACDemo";
+			};
+			name = Debug;
+		};
+		A016296A1E0BB8F000CA9BED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JYHotAndColdSignalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cib.JYHotAndColdSignalTests;
+				PRODUCT_NAME = JYRACDemo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JYRACDemo.app/JYRACDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A016293E1E0BB8EF00CA9BED /* Build configuration list for PBXProject "JYRACDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01629631E0BB8F000CA9BED /* Debug */,
+				A01629641E0BB8F000CA9BED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A01629651E0BB8F000CA9BED /* Build configuration list for PBXNativeTarget "JYRACDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01629661E0BB8F000CA9BED /* Debug */,
+				A01629671E0BB8F000CA9BED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A01629681E0BB8F000CA9BED /* Build configuration list for PBXNativeTarget "JYRACDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01629691E0BB8F000CA9BED /* Debug */,
+				A016296A1E0BB8F000CA9BED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A016293B1E0BB8EF00CA9BED /* Project object */;
+}
