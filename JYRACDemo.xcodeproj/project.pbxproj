@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A00EB9711E30994800AE62BC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00EB9701E30994800AE62BC /* LoginViewController.m */; };
+		A00EB9761E309CAF00AE62BC /* NetService.m in Sources */ = {isa = PBXBuildFile; fileRef = A00EB9751E309CAF00AE62BC /* NetService.m */; };
 		A01629481E0BB8F000CA9BED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01629471E0BB8F000CA9BED /* main.m */; };
 		A016294B1E0BB8F000CA9BED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A016294A1E0BB8F000CA9BED /* AppDelegate.m */; };
 		A01629511E0BB8F000CA9BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A016294F1E0BB8F000CA9BED /* Main.storyboard */; };
@@ -30,8 +32,13 @@
 /* Begin PBXFileReference section */
 		5E5CF01C9F6015B220BDAA22 /* libPods-JYRACDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JYRACDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78731080E77D364685FB89A0 /* Pods-JYRACDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYRACDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYRACDemo/Pods-JYRACDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A00EB96F1E30994800AE62BC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A00EB9701E30994800AE62BC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A00EB9741E309CAF00AE62BC /* NetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetService.h; sourceTree = "<group>"; };
+		A00EB9751E309CAF00AE62BC /* NetService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetService.m; sourceTree = "<group>"; };
+		A00EB97E1E30A4F300AE62BC /* JYRACDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "JYRACDemo-Prefix.pch"; path = "../JYRACDemo-Prefix.pch"; sourceTree = "<group>"; };
 		A01629431E0BB8EF00CA9BED /* JYRACDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYRACDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A01629471E0BB8F000CA9BED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A01629471E0BB8F000CA9BED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
 		A01629491E0BB8F000CA9BED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A016294A1E0BB8F000CA9BED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A016294C1E0BB8F000CA9BED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -39,7 +46,7 @@
 		A01629501E0BB8F000CA9BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A01629521E0BB8F000CA9BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A01629551E0BB8F000CA9BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A01629571E0BB8F000CA9BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A01629571E0BB8F000CA9BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		A016295C1E0BB8F000CA9BED /* JYRACDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JYRACDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD53F9F583DBDD034A06004 /* Pods-JYRACDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYRACDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYRACDemo/Pods-JYRACDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +87,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A00EB9731E309C6D00AE62BC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A00EB9741E309CAF00AE62BC /* NetService.h */,
+				A00EB9751E309CAF00AE62BC /* NetService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A00EB97A1E30A22500AE62BC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A01629471E0BB8F000CA9BED /* main.m */,
+				A01629541E0BB8F000CA9BED /* LaunchScreen.storyboard */,
+				A01629571E0BB8F000CA9BED /* Info.plist */,
+				A00EB97E1E30A4F300AE62BC /* JYRACDemo-Prefix.pch */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		A016293A1E0BB8EF00CA9BED = {
 			isa = PBXGroup;
 			children = (
@@ -102,33 +129,18 @@
 		A01629451E0BB8EF00CA9BED /* JYRACDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A016296B1E0BB93900CA9BED /* Lib */,
+				A00EB9731E309C6D00AE62BC /* Service */,
 				A01629491E0BB8F000CA9BED /* AppDelegate.h */,
 				A016294A1E0BB8F000CA9BED /* AppDelegate.m */,
 				A016294C1E0BB8F000CA9BED /* ViewController.h */,
 				A016294D1E0BB8F000CA9BED /* ViewController.m */,
+				A00EB96F1E30994800AE62BC /* LoginViewController.h */,
+				A00EB9701E30994800AE62BC /* LoginViewController.m */,
 				A016294F1E0BB8F000CA9BED /* Main.storyboard */,
 				A01629521E0BB8F000CA9BED /* Assets.xcassets */,
-				A01629541E0BB8F000CA9BED /* LaunchScreen.storyboard */,
-				A01629571E0BB8F000CA9BED /* Info.plist */,
-				A01629461E0BB8F000CA9BED /* Supporting Files */,
+				A00EB97A1E30A22500AE62BC /* Resource */,
 			);
 			path = JYRACDemo;
-			sourceTree = "<group>";
-		};
-		A01629461E0BB8F000CA9BED /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A01629471E0BB8F000CA9BED /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A016296B1E0BB93900CA9BED /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +298,8 @@
 				A0162C681E0BBF4000CA9BED /* ViewController.m in Sources */,
 				A016294B1E0BB8F000CA9BED /* AppDelegate.m in Sources */,
 				A01629481E0BB8F000CA9BED /* main.m in Sources */,
+				A00EB9711E30994800AE62BC /* LoginViewController.m in Sources */,
+				A00EB9761E309CAF00AE62BC /* NetService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +335,7 @@
 				A01629551E0BB8F000CA9BED /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,6 +428,8 @@
 			baseConfigurationReference = BFD53F9F583DBDD034A06004 /* Pods-JYRACDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JYRACDemo/JYRACDemo-Prefix.pch";
 				INFOPLIST_FILE = JYRACDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -431,6 +448,8 @@
 			baseConfigurationReference = 78731080E77D364685FB89A0 /* Pods-JYRACDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JYRACDemo/JYRACDemo-Prefix.pch";
 				INFOPLIST_FILE = JYRACDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
