@@ -37,7 +37,7 @@
         return @([self isValidUsername:value]);
     }];
     RAC(self.usernameTF, backgroundColor) = [validUsernameSignal map:^id _Nullable(NSNumber *usernameValid) {
-        return [usernameValid boolValue] ? [UIColor clearColor] : [UIColor yellowColor];
+        return [usernameValid boolValue] ? [UIColor whiteColor] : [UIColor yellowColor];
     }];
     
     // 密码
@@ -45,39 +45,56 @@
         return @([self isValidPassword:value]);
     }];
     RAC(self.passwordTF, backgroundColor) = [validPasswordSignal map:^id _Nullable(NSNumber *passwordValid) {
-        return [passwordValid boolValue] ? [UIColor clearColor] : [UIColor yellowColor];
+        return [passwordValid boolValue] ? [UIColor whiteColor] : [UIColor yellowColor];
     }];
     
     // 登录按钮是否启用 叠加--combine, reduce中的参数是与signal一一对应。
-    RACSignal *signInActiveSignal = [RACSignal combineLatest:@[validUsernameSignal, validPasswordSignal] reduce:^id (NSNumber *usernameValid, NSNumber *passwordValid){
-        return @([usernameValid boolValue] && [passwordValid boolValue]);
-    }];
+    RACSignal *signInActiveSignal = [RACSignal combineLatest:@[validUsernameSignal, validPasswordSignal]
+                                                      reduce:^id (NSNumber *usernameValid, NSNumber *passwordValid){
+                                                        return @([usernameValid boolValue] && [passwordValid boolValue]);}];
     [signInActiveSignal subscribeNext:^(NSNumber *signUpActive) {
         self.signInButton.enabled = [signUpActive boolValue];
     }];
     
     //  登录事件
-    RACSignal *signInSignal = [self.signInButton rac_signalForControlEvents:UIControlEventTouchDown];
-    
+    [[[[self.signInButton rac_signalForControlEvents:UIControlEventTouchUpInside]
+    doNext:^(__kindof UIControl * _Nullable x) {
+        self.signInButton.enabled = NO;
+        self.errorLB.hidden = YES;
+    }]
+    flattenMap:^__kindof RACSignal * _Nullable(__kindof UIControl * _Nullable value) {
+        return [self signInServiceSignal];
+    }]
+    subscribeNext:^(NSNumber *signInSuccess) {
+        self.signInButton.enabled = YES;
+        BOOL success = [signInSuccess boolValue];
+        self.errorLB.hidden = success;
+        if (success) {
+            NSLog(@"跳转到主页");
+        }
+    }];
 }
-//- (RACSignal *)signInServiceSignal {
-//    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-//        [self.service signInWithUserName:self.usernameTF.text
-//                                Password:self.passwordTF.text
-//                               Completed:^(BOOL success) {
-//                                   [subscriber sendNext:@[success]];
-//                                   [subscriber sendCompleted];
-//                               }];
-//        return nil;
-//    }];
-//}
+
+- (RACSignal *)signInServiceSignal {
+    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [self.service signInWithUserName:self.usernameTF.text
+                                Password:self.passwordTF.text
+                               Completed:^(BOOL success) {
+                                   [subscriber sendNext:@(success)];
+                                   [subscriber sendCompleted];
+                               }];
+        return nil;
+    }];
+}
 - (BOOL)isValidUsername:(NSString *)username {
-    return username.length > 3;
+    return username.length > 2;
 }
 
 - (BOOL)isValidPassword:(NSString *)password {
-    return password.length > 3;
+    return password.length > 2;
 }
+
+
 #pragma mark Learing Track
 - (void)usernameVersion1 {
     // 过滤--filter
@@ -128,8 +145,25 @@
     }];
 }
 - (void)signInButtonVersion2 {
-    
+    [[[self.signInButton rac_signalForControlEvents:UIControlEventTouchUpInside]
+    // 将登陆信号转换为登陆服务的信号
+    map:^id _Nullable(__kindof UIControl * _Nullable value) {
+        return [self signInServiceSignal];
+    }]
+    subscribeNext:^(id  _Nullable x) {// 返回的结果不是登陆结果的信号
+        NSLog(@"Sign In Result:%@", x);
+    }];
 }
+- (void)signInButtonVersion3 {
+    [[[self.signInButton rac_signalForControlEvents:UIControlEventTouchUpInside]
+      flattenMap:^id _Nullable(__kindof UIControl * _Nullable value) {
+          return [self signInServiceSignal];
+      }]
+     subscribeNext:^(id  _Nullable x) {// 返回的结果是登陆结果的信号
+         NSLog(@"Sign In Result:%@", x);
+     }];
+}
+
 
 
 - (void)didReceiveMemoryWarning {
