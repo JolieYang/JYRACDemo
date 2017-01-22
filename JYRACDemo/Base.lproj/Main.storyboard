@@ -64,16 +64,17 @@
                         <outlet property="signInButton" destination="Og5-Vi-6V9" id="Uqa-YV-aIC"/>
                         <outlet property="signUpButton" destination="Zoq-aq-AEZ" id="q7u-95-BUK"/>
                         <outlet property="usernameTF" destination="d2A-yP-X91" id="DU8-yr-mtq"/>
+                        <segue destination="mt5-lQ-vIJ" kind="show" id="m5S-pk-WQ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="420"/>
+            <point key="canvasLocation" x="85" y="420"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="Gcb-ep-aul">
             <objects>
-                <viewController id="mt5-lQ-vIJ" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="mt5-lQ-vIJ" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UVa-0R-QIg"/>
                         <viewControllerLayoutGuide type="bottom" id="3qy-qo-tL1"/>
@@ -87,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IQr-jk-2aY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588.5" y="420.5"/>
+            <point key="canvasLocation" x="476" y="420"/>
         </scene>
     </scenes>
 </document>

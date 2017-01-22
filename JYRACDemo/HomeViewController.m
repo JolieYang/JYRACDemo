@@ -6,15 +6,15 @@
 //  Copyright © 2016年 China Industrial Bank. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import <ReactiveObjC/ReactiveObjC.h>
 #import <AFNetworking/AFNetworking.h>
 
-@interface ViewController ()
+@interface HomeViewController ()
 @property (nonatomic, strong) AFHTTPSessionManager *sessionManager;
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

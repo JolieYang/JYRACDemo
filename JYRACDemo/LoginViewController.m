@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "NetService.h"
+#import "AppDelegate.h"
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *usernameTF;
@@ -71,9 +72,15 @@
         self.errorLB.hidden = success;
         if (success) {
             NSLog(@"跳转到主页");
+            [[NSUserDefaults standardUserDefaults] setBool:success forKey:LOGIN_SUCCESS_KEY];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            
+            AppDelegate *pDelegate = [UIApplication sharedApplication].delegate;
+            pDelegate.window.rootViewController = [[self storyboard] instantiateViewControllerWithIdentifier:@"HomeViewController"];
         }
     }];
 }
+
 
 - (RACSignal *)signInServiceSignal {
     return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
