@@ -154,7 +154,27 @@
         NSLog(@"Sign In Result:%@", x);
     }];
 }
+// 解决方案1： 在外部信号的subscribeNext block中对内部信号进行订阅信号。
 - (void)signInButtonVersion3 {
+    [[[self.signInButton rac_signalForControlEvents:UIControlEventTouchUpInside]
+      doNext:^(__kindof UIControl * _Nullable x) {
+          self.signInButton.enabled = NO;
+          self.errorLB.hidden = YES;
+          
+      }]
+     subscribeNext:^(__kindof UIControl * _Nullable x) {
+         [[self signInServiceSignal] subscribeNext:^(NSNumber *signInSuccess) {
+             self.signInButton.enabled = YES;
+             BOOL success = [signInSuccess boolValue];
+             self.errorLB.hidden = success;
+             if (success) {
+                 NSLog(@"跳转到主页");
+             }
+         }];
+     }];
+}
+// 解决方案2:通过flattenMap将订阅数据转换为Block中的值
+- (void)signInButtonVersion4 {
     [[[self.signInButton rac_signalForControlEvents:UIControlEventTouchUpInside]
       flattenMap:^id _Nullable(__kindof UIControl * _Nullable value) {
           return [self signInServiceSignal];
